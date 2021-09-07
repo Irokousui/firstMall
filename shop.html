@@ -123,9 +123,23 @@
         #content{margin-top: 10px;}
         #product_section{overflow: hidden; margin-top: 5px;}
 
-        #product_section>#product_article{float: left; width: 795px;}
+        #product_section>#product_article{float: left; width: 100%;}
         #product_section>#product_aside{float: right; padding: 5px; padding-top: 0; width: 170px;}
         #product_section>#product_article>img{display: block;}
+        .prodItem{float: left;
+                  border: 1px solid #ddd;}
+        .prodRow{overflow: hidden;}
+        .m-l-10{margin-left: 10px;}
+        .prodRow{overflow: hidden; margin-bottom: 10px;}
+        .prodRow:nth-child(3){margin-bottom: 0px}
+        #product_article{border: 1px solid #ccc; padding: 15px;}
+        .prod-buy{background: url(Images/mainBtns.png);
+                  width: 40px; height: 40px;
+                  position: absolute;
+                  text-indent: -99999px;
+                  left: 20px; top: 240px;}
+        .prodItem:hover{border: 1px solid #0096e4;}
+        .prodItem:hover>.prod-buy{background-position: -40px 0; widows: 100px;}
     </style>
     <!--푸터-->
     <style></style>
@@ -242,21 +256,51 @@
         </figure>
         <section id="product_section">
             <article id="product_article">
-                <img src="http://placehold.it/795x400" width="795" height="400">
-                <img src="http://placehold.it/795x400" width="795" height="400">
-                <img src="http://placehold.it/795x400" width="795" height="400">
+                <div class="prodRow">
+                    <div class="prodItem">
+                        <img src="Images/prodMid1-1.jpg" alt="페브리즈">
+                        <div class="prod-buy">구매하기</div>
+                    </div>
+                    <div class="prodItem m-l-10">
+                        <img src="Images/prodMid1-2.jpg" alt="깨끗한 나라">
+                        <div class="prod-buy">구매하기</div>
+                    </div>
+                </div>
+                <div class="prodRow">
+                    <div class="prodItem">
+                        <img src="Images/prodSm2-1.jpg" alt="제습제">
+                        <div class="prod-buy">구매하기</div>
+                    </div>
+                    <div class="prodItem m-l-10">
+                        <img src="Images/prodSm2-2.jpg" alt="오설록">
+                        <div class="prod-buy">구매하기</div>
+                    </div>
+                    <div class="prodItem m-l-10">
+                        <img src="Images/prodSm2-3.jpg" alt="비타민">
+                        <div class="prod-buy">구매하기</div>
+                    </div>
+                    <div class="prodItem m-l-10">
+                        <img src="Images/prodSm2-4.jpg" alt="장난감">
+                        <div class="prod-buy">구매하기</div>
+                    </div>
+                </div>
+                <div class="prodRow">
+                    <div class="prodItem">
+                        <img src="Images/prodMd3-1.jpg" alt="클라우드">
+                        <div class="prod-buy">구매하기</div>
+                    </div>
+                    <div class="prodItem m-l-10">
+                        <img src="Images/prodSm3-2.jpg" alt="욕실용품">
+                        <div class="prod-buy">구매하기</div>
+                    </div>
+                    <div class="prodItem m-l-10">
+                        <img src="Images/prodSm3-3.jpg" alt="바디워시">
+                        <div class="prod-buy">구매하기</div>
+                    </div>
+                </div>
             </article>
             <aside id="product_aside">
-                <a href="#"><img src="http://placehold.it/170x200" width="170" height="200"></a>
-                <a href="#"><img src="http://placehold.it/170x200" width="170" height="200"></a>
-                <a href="#"><img src="http://placehold.it/170x200" width="170" height="200"></a>
-                <a href="#"><img src="http://placehold.it/170x200" width="170" height="200"></a>
-                <a href="#"><img src="http://placehold.it/170x200" width="170" height="200"></a>
-                <a href="#"><img src="http://placehold.it/170x200" width="170" height="200"></a>
-                <a href="#"><img src="http://placehold.it/170x200" width="170" height="200"></a>
-                <a href="#"><img src="http://placehold.it/170x200" width="170" height="200"></a>
-                <a href="#"><img src="http://placehold.it/170x200" width="170" height="200"></a>
-                <a href="#"><img src="http://placehold.it/170x200" width="170" height="200"></a>
+
             </aside>
         </section>
     </div>
