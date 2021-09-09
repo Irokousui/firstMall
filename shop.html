@@ -14,7 +14,8 @@
         a{text-decoration: none;}
         img{border: 0;}
         ul{list-style: none;}
-        body{width: 980px; margin: 0 auto;}
+        body{width: 100%;}
+        .narrow{width: 980px; margin: 0 auto}
     </style>
     <!--헤더-->
     <style>
@@ -28,7 +29,7 @@
     <style>
         body{position: relative;}
         #global_aside{position: absolute;
-                      left: 990px; top: 75px;
+                      left: 1350px; top: 75px;
                       width: 90px;}
         #global_aside>a{display: block; margin-bottom: 5px;}
     </style>
@@ -121,6 +122,7 @@
     <!--본문-->
     <style>
         #content{margin-top: 10px;}
+        .main_banner{position: relative; left: 50%; margin-left: -980px;}
         #product_section{overflow: hidden; margin-top: 5px;}
 
         #product_section>#product_article{float: left; width: 100%;}
@@ -133,18 +135,25 @@
         .prodRow{overflow: hidden; margin-bottom: 10px;}
         .prodRow:nth-child(3){margin-bottom: 0px}
         #product_article{border: 1px solid #ccc; padding: 15px;}
-        .prod-buy{background: url(Images/mainBtns.png);
-                  width: 40px; height: 40px;
-                  position: absolute;
-                  text-indent: -99999px;
-                  left: 20px; top: 240px;}
         .prodItem:hover{border: 1px solid #0096e4;}
-        .prodItem:hover>.prod-buy{background-position: -40px 0; widows: 100px;}
+        .prodItem:hover>.prod-buy{background-position: -40px 0; width: 100px;}
+        .prodItem{position: relative;}
+        .prod-buy{background: url(Images/mainBtns.png); position: absolute;
+                  width: 40px; height: 40px;
+                  text-indent: -99999px;
+                  top: 240px; left: 20px;}
+
+
+        .prod_tab{position: absolute; top: 530px; left: 1100px;}
+        .tab-item{position: relative;}
+        span.mask{position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
+        span.mask:hover{border: 2px solid blue;}
     </style>
     <!--푸터-->
     <style></style>
 </head>
 <body>
+    <div class="narrow">
     <header id="main_header">
         <h1 class="logo">
             <a href="#"><img src="Images/title.png" /></a>
@@ -250,59 +259,88 @@
             <li>Document</li>
         </ul>
     </div>
+    </div>
     <div id="content">
         <figure id="product_image">
-            <img src="http://placehold.it/980x440" width="980" height="440">
+            <img class="main_banner" src="Images/prodRotate1.jpg">
         </figure>
-        <section id="product_section">
+        <ul class="prod_tab">
+            <li class="tab-item">
+                <img class="tab-img" src="Images/prodRotateSmall1.jpg">
+                <span class="mask"></span>
+            </li>
+            <li class="tab-item">
+                <img class="tab-img" src="Images/prodRotateSmall2.jpg">
+                <span class="mask"></span>
+            </li>
+            <li class="tab-item">
+                <img class="tab-img" src="Images/prodRotateSmall3.jpg">
+                <span class="mask"></span>
+            </li>
+            <li class="tab-item">
+                <img class="tab-img" src="Images/prodRotateSmall4.jpg">
+                <span class="mask"></span>
+            </li>
+            <li class="tab-item">
+                <img class="tab-img" src="Images/prodRotateSmall5.jpg">
+                <span class="mask"></span>
+            </li>
+            <li class="tab-item">
+                <img class="tab-img" src="Images/prodRotateSmall6.jpg">
+                <span class="mask"></span>
+            </li>
+        </ul>
+            <div class="narrow">
+           <section id="product_section">
             <article id="product_article">
                 <div class="prodRow">
                     <div class="prodItem">
                         <img src="Images/prodMid1-1.jpg" alt="페브리즈">
-                        <div class="prod-buy">구매하기</div>
+                        <div class="prod-buy"></div>
                     </div>
                     <div class="prodItem m-l-10">
                         <img src="Images/prodMid1-2.jpg" alt="깨끗한 나라">
-                        <div class="prod-buy">구매하기</div>
+                        <div class="prod-buy"></div>
                     </div>
                 </div>
                 <div class="prodRow">
                     <div class="prodItem">
                         <img src="Images/prodSm2-1.jpg" alt="제습제">
-                        <div class="prod-buy">구매하기</div>
+                        <div class="prod-buy"></div>
                     </div>
                     <div class="prodItem m-l-10">
                         <img src="Images/prodSm2-2.jpg" alt="오설록">
-                        <div class="prod-buy">구매하기</div>
+                        <div class="prod-buy"></div>
                     </div>
                     <div class="prodItem m-l-10">
                         <img src="Images/prodSm2-3.jpg" alt="비타민">
-                        <div class="prod-buy">구매하기</div>
+                        <div class="prod-buy"></div>
                     </div>
                     <div class="prodItem m-l-10">
                         <img src="Images/prodSm2-4.jpg" alt="장난감">
-                        <div class="prod-buy">구매하기</div>
+                        <div class="prod-buy"></div>
                     </div>
                 </div>
                 <div class="prodRow">
                     <div class="prodItem">
                         <img src="Images/prodMd3-1.jpg" alt="클라우드">
-                        <div class="prod-buy">구매하기</div>
+                        <div class="prod-buy"></div>
                     </div>
                     <div class="prodItem m-l-10">
                         <img src="Images/prodSm3-2.jpg" alt="욕실용품">
-                        <div class="prod-buy">구매하기</div>
+                        <div class="prod-buy"></div>
                     </div>
                     <div class="prodItem m-l-10">
                         <img src="Images/prodSm3-3.jpg" alt="바디워시">
-                        <div class="prod-buy">구매하기</div>
+                        <div class="prod-buy"></div>
                     </div>
                 </div>
             </article>
-            <aside id="product_aside">
+            </section>
+            </div>
+            </div>
+    <footer id="main_footer">
 
-            </aside>
-        </section>
-    </div>
+    </footer>
 </body>
 </html>
